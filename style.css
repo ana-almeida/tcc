@@ -37,11 +37,11 @@ nav { font-family: 'GandhiSerif-Bold'; font-size: 1.7em; margin-top: 15px; text-
 	}
 }
 
-#roda {z-index: -3; position: absolute; top: -200px;}
+#roda {z-index: -3; position: absolute; top: -200px; transition: 1s ease opacity;}
 #roda:hover{border:10px;}
-#ponte {z-index: -2; position: absolute; top: 0; left: 0;}
+#ponte {z-index: -2; position: absolute; top: 0; left: 0; transition: 1s ease opacity;}
 #ponte:hover {opacity: 50%;}
-#corpo {z-index: 2; position: absolute; top: 1240px; left: 60px}
+#corpo {z-index: 2; position: absolute; top: 1240px; left: 60px; transition: 1s ease opacity;}
 .bg:hover {opacity: 0.5;}
 #agua {z-index: -1; position: absolute; top: 1189px; left: 60px;}
 #maymont {position: absolute; top: 670px;}
