@@ -3,22 +3,50 @@
 @font-face {font-family: GandhiSerif-Italic; src: url(assets/GandhiSerif-Italic.otf);}
 
 
-body {background-color: #e2d1de; width: 100%;}
+body {
+	background-color: #e2d1de;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+}
 nav { font-family: 'GandhiSerif-Bold'; font-size: 1.7em; margin-top: 15px; text-align: center; color: azure;}
 .datas {font-family: 'GandhiSerif-Regular'; font-size: 1em;}
 .next {font-family: 'GandhiSerif-Regular'; font-size: 1em;}
 .pins {width: 30px;}
-#video {position: fixed; margin-left: 300px;}
+
+.container {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+#video {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+@media (min-width: 650px) {
+	#video {
+		top: 15vh;
+		width: 50vw;
+		height: 50vh;
+	}
+}
+
 #roda {z-index: -3; position: absolute; top: -200px;}
 #roda:hover{border:10px;}
-#ponte {z-index: -2; position: absolute; top: 0px;}
+#ponte {z-index: -2; position: absolute; top: 0; left: 0;}
 #ponte:hover {opacity: 50%;}
 #corpo {z-index: 2; position: absolute; top: 1240px; left: 60px}
 .bg:hover {opacity: 0.5;}
-#agua {z-index: -1; position: absolute; top: 1429px; left: 60px;}
+#agua {z-index: -1; position: absolute; top: 1189px; left: 60px;}
 #maymont {position: absolute; top: 670px;}
-#jamesriver {position: absolute; top: 2500px; margin-left: 50px;}
-#atlanta {position: absolute; top: 1070px;  margin-left: 500px;}
-#mardeconcreto {position: absolute; top: 750px; margin-left: 1150px;}
-#datarios {position: absolute; top: 2550px; margin-left: 1100px;}
+#jamesriver {position: absolute; top: 2300px;}
+#atlanta {position: absolute; top: 1070px;}
+#mardeconcreto {position: absolute; top: 750px;}
+#datarios {position: absolute; top: 2350px;}
 
